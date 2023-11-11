@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Unica+One&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.block{
+    border: 2px solid black;
+}
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 15px;
+}
+.err-container{
+    margin: 20px auto;
+    font-family: 'jost',sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+    font-family: 'jost',sans-serif;
+    font-weight: 500;
+    font-size: 22px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.load{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.search-info{
+    margin-top: 10px;
+    font-family: 'jost',sans-serif;
+    font-size: 17px;
+    font-weight: 500;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.flex-head {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 100%;
+  gap: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.search-card{
+    margin-block: 15px;
+    border-bottom: 1px solid black;
+    max-width: 100%;
+    padding-bottom: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-img{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.flex-head .flex-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flex-head-text h3 a {
+    font-family: 'jost',sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: underline;
+}
+.flex-head-text h6 a{
+    color: blue;
+    font-size: 16px;
+    font-family: 'jost',sans-serif;
+}
+.flex-body p{
+    max-width: 100%;
+    line-height: 1.7;
 }
