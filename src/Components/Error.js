@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ErrorElement = ({message}) => {
+const Error = ({message}) => {
   return (
     <div className='err-container'>
         {message}
@@ -8,4 +8,4 @@ const ErrorElement = ({message}) => {
   )
 }
 
-export default ErrorElement
+export default Error

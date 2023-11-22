@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { HashLoader } from "react-spinners";
-import ErrorElement from "./ErrorElement";
+import Error from "./Error";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -53,7 +53,7 @@ const ResultsPage = (handleSearch) => {
           <HashLoader />
         </div>
       ) : error ? (
-        <ErrorElement message={error} />
+        <Error message={error} />
       ) : data ? (
         <div>
           <Header handleSearch={handleSearch} search={search} />
